@@ -1,0 +1,19 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Przetestuj adres IP</title>
+</head>
+<body>
+    <button onclick="redirect()">Kliknij, aby sprawdzić adres IP</button>
+
+    <script>
+        function redirect() {
+            fetch('/redirect')
+                .then(response => response.redirected)
+                .then(location => window.location.href = location);
+        }
+    </script>
+</body>
+</html>
