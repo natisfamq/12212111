@@ -1,0 +1,8 @@
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    background-color: rgba(0, 147, 255, 0.1);
+}
